@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+
+        /*===Type Selectors===*/
+
+        /*h1{
+            color: red;
+        }
+
+        div{
+            color: purple;
+        }*/
+
+        
+        /*===ID SELECTORS (USING # tag)===*/
+        /*#myh2{
+            color: deeppink;
+        }
+
+        #tommey{
+            color: orange;
+        }*/
+
+        /*===class Selector===*/
+        /*.badasaman{
+            color: mediumpurple;
+            background-color: lightblue;
+        }*/
+
+        /*===Universal Selector===*/
+        /*
+        *{
+            color:blue ;
+            background-color: lightblue
+        }*/
+
+
+        /*===ATTRIBUTE SELECTORS*===*/
+        /*[href]{
+            background-color: pink;
+        }
+        [id]{
+            background-color: greenyellow;
+        }
+        [class]{
+            background-color: skyblue;
+        }*/
+
+        /*ATTRIBUTE SELECTOR WITH THE VALUES*/
+        /*[href="https://www.ijse.lk"]{
+            background-color: greenyellow;
+        }*/
+
+        /*[href^="https"]{
+            background-color: greenyellow;
+        }
+        [href^="http:"]{
+            background-color: yellow;
+        }*/
+
+        /*space also considering this*/
+        /*[href^="https: "]{
+            background-color: green;
+        }*/
+
+        /*ENDING VALUE CONSIDERING*/
+        /*[href$="lk"]{
+            background-color: lightblue;
+        }
+
+        [href$="g"]{
+            background-color:gold;
+        }*/
+
+        /*[href*="code"]{
+            background-color: limegreen;
+        }*/
+
+        /* ~ tilder symbol*/
+        /*[href~="code"]{
+            background-color: limegreen;
+        }
+
+        h3[class]{
+            background-color: yellow;
+        }*/
+
+
+        /*===pseudo Class Selector===*/
+
+        /*CURSER POINT BRING THE TEXT PART THEN APPLY COLOR*/
+        /*h1:hover{
+            color: red;
+            background-color: lightpink;
+        }*/
+
+        /*CLICK THE TEXT THEN APLLY COLOR*/
+        /*h1:active{
+            color: green;
+            background-color: lightgreen;
+        }*/
+
+        /*FIRST APPLY COLOR THEN CLICK THE LINK THEN CHANGE COLOR*/
+        /*a:link{
+            color: red;
+        }
+        a:visited{
+            color: gold;
+        }*/
+
+
+        /*color text filed/*
+        /*input{
+            background-color: pink;
+        }*/
+
+        /*touch the text field then apply color*/
+        /*input:focus{
+            background-color: pink;
+        }*/
+
+
+        
+        /*(PARENT KENEKGEN RAP WELA THIBIYA YUTHUI) list item only first item change color*/
+        /*li:first-child{
+            color: red;
+        }*/
+
+        /*CHANGE LAST LIST ITEM COLOR*/
+        /*li:last-child{
+            color:lime;
+        }*/
+        
+        /*CHANGE COLOR WE WANT TO CHANGE(EX-:WE CHANGE SECOND LIST ITEM COLOR)*/
+        /*li:nth-child(2){
+            color:blue;
+        }
+        li:nth-child(5){
+            color:yellow;
+        }*/
+
+        /*START FROM LAST (CHANGE COLER MENTION ITEM PLACE)*/
+        /*li:nth-last-child(2){
+            color:blue;
+
+        }*/
+
+        /*CHANGE COLOR ODD NUMBERS OF THE LIST*/
+        /*li:nth-child(odd){
+            color:blue;
+        }*/
+
+        /*CHANGE COLOR EVEN NUMBERS OF THE LIST*/
+        /*li:nth-child(even){
+            color:blue;
+        }*/
+
+        /*CHANGE COLER OF LAST 4 LIST ITEMS (AWASANA 4 sita pahalata apply wenawa.... n+4~0=4=4)*/
+        /*li:nth-child(n+4){
+            color:blue;
+        }*/
+
+        /*3*0-1=-1,3*1-1=2 like this order CHANGE COLOR OF THE LIST*/
+        /*li:nth-child(3n-1){
+            color:blue;
+        }*/
+
+        /*CHANGE THE COLOR AFTER TWO BY TWO*/
+        /*li:nth-child(3n+1){
+            color:blue;
+        }*/
+
+        /*CHANGE COLER MIDDLE OF THE LIST ITEM*/
+        /*li:nth-child(4n){
+            color:blue;
+        }*/
+
+
+        /*===PSEUDO ELEMENT SELECTORS===*/
+
+        /*h1::after{
+            content: "😍"; (WINDOWS BUTTON + .)
+            content: "HELOOO";
+            background-color: red;
+        }
+
+        h1::before{
+            content: "HELOOOWWW";
+            background-color: green;
+        }
+
+        #myText::first-line{
+            background-color: red;
+        }
+        #myText::first-letter{
+            color: yellow;
+        }*/
+
+        /*TEXT EKA COPPY KARANAKOTA SELECT KARAGANA KOTASE COLORS CHANGE WENAWA*/
+        ::selection{
+            color: red;
+            background-color: pink;
+        }
+
+        /*2025/08/12 Lecture Session*/
+
+        input ::placeholder{
+        color:red;
+        }
+
+        input[type="file"]{
+            background-color: red;
+        }
+
+        input[type="file"] ::file-selector-button{
+            background-color: red;
+        }
+        
+        /*change list display list items in $ mark & imojes*/
+        li::marker{
+            content: "$";
+        }
+
+         li::marker{
+            content: "😍";
+        }
+
+        /*grouping karan color Changing karagana puluwan eken ekama style eka ekapara kipekata apply karagana puluwan(# use karama id selector eken thiyen kotas wala colors change karagana puluwan*/
+
+        h1,h2,h3{
+            background-color: yellow;
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+
+    <p id="myText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam excepturi deleniti voluptate minus sint nihil accusamus, quasi pariatur enim quisquam, laboriosam labore possimus, modi aut est quam velit molestias. Accusantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repudiandae ipsam debitis, provident amet odit. Quam, veniam, eaque cum laborum perspiciatis inventore doloremque vel eius similique, odit consequatur unde suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, expedita, reiciendis velit temporibus error magni ut dolorum aperiam sequi eligendi ex dicta eum ipsam dolore, vel sit. Nesciunt, esse laudantium!</p>
+    
+    <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Java Script</li>
+        <li>C#</li>
+        <li>Phython</li>
+        <li>R</li>
+    </ul>
+
+    <br><br>
+    <h1>IJSE - Institute of Softeware Engineering</h1>
+    <div>Let's master Software Engineering </div>
+    <h2 id="myh2">welcome to web technologies</h2>
+    <p>Lorem ipsum dolor <span id="tommey">sit amet consectetur adipisicing elit. Modi doloribus rem,</span> non laborum nulla optio consectetur eaque fugiat corrupti magni iusto dignissimos est voluptatem numquam saepe magnam officia possimus. Accusantium!</p>
+    <h2>Web technology session 2</h2>
+
+    <!--Class Selector-->
+    <p class="badasaman">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur sit quam facilis quaerat quibusdam dicta quasi tempora ipsa dolor dolore perferendis, dolorem laboriosam commodi, sint iure voluptas animi laudantium. Facilis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sit porro tempore in nam quis deserunt aspernatur! Magnam error recusandae nisi modi voluptatibus, atque quidem voluptate adipisci nulla excepturi quos.</p>
+    <h3 class="badasaman">Let's learn web development</h3>
+    <h3>Let's learn web development</h3>
+    <p class="badasaman">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste delectus molestias animi totam, neque sapiente hic. Commodi consequatur, quo eligendi, ex delectus sit sapiente sint voluptatibus voluptatum non officia nihil.</p>
+
+    <a href="https://www.ijse.lk">IJSE LK</a> <br>
+    <a href="https: //www.ijse.com">IJSE COM</a> <br>
+    <a href="https://www.abcd.lk">ABCD</a> <br>
+    <a href="http://www.wikipidia.org">Wikipidia</a> <br>
+    <a href="http://www.rootcode.io">RootCodeIO</a> <br>
+    <a href="http://www.root code.io">Root CodeIO</a> <br>
+    <a href="http://www.root code .io">Root Code IO</a> <br>
+
+    <br><br>
+
+<Form>
+    <h3>LOGIN</h3>
+    <div>
+           <label for="email">Email</label>
+            <br>
+            <input id="email" placeholder="Enter Email"> 
+        </div>
+
+    <div>
+            <label for="password">password</label>
+             <br>
+            <input type="password" id="password" placeholder="Enter Password"> <!--plceholder show input field text-->
+        </div>
+
+     <button type="button">Login</button>
+
+     </Form>
+
+<br><br><br>
+
+<input type="file">
+
+
+</body>
+</html>

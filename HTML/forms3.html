@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=fo, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Student Registration</h1>
+
+        <div>
+           <label for="fName">First Name</label>
+            <br>
+            <input id="fname"> 
+        </div>
+
+        <div>
+           <label for="lName">Lastt Name</label>
+            <br>
+            <input id="lname"> 
+        </div>
+
+        <div>
+           <label for="address">Address</label>
+           <br>
+           <textarea name="Address" rows="10" cols="50"></textarea>
+        </div>
+        
+        <div>
+            <label for="program" name="program">Select The Program</label>
+        <br>
+            <select id="program">
+                <optgroup label="Backend Dev">
+                    <option>Java</option>
+                    <option>Phython</option>
+                    <option>c#</option>
+                    <option>C++</option>
+                    </optgroup>
+                <optgroup label="Frontend dev">
+                    <option>React</option>
+                    <option>Angular</option>
+                    <option>Java Script</option>
+                </optgroup>  
+             </select>        
+        </div>
+        <br>
+
+        <input type="radio"><label>Full Payement</label>
+        <br>
+        <input type="radio"><label>Monthly Payement</label>
+
+        <br><br>
+
+        <div>
+            <label >Select Gender</label>
+        <br>
+        <input type="radio" id="male" name="gender"><label for="male">Male</label>
+        <br>
+        <input type="radio" id="female" name="gender"><label for="female">Female</label>
+        <br>
+        <input type="radio" id="unkown" name="gender"><label for="unkown">unkown</label>
+        </div>
+
+<br><br>
+<label for="myBrowser">Choose a browser from this list:</label>
+<input list="browsers" id="myBrowser" name="myBrowser" />
+<datalist id="browsers">
+  <option value="Chrome"></option>
+  <option value="Firefox"></option>
+  <option value="Opera"></option>
+  <option value="Safari"></option>
+  <option value="Microsoft Edge"></option>
+</datalist>
+<br><br>
+    
+<button type="submit">Submit</button>
+<button type="button">Update</button>
+<button type="reset">Reset</button>
+<button type="button">Delete</button>
+
+    </form>
+</body>
+</html>
