@@ -1,0 +1,93 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex layout2</title>
+    <style>
+        section{
+            width: 500px;
+            height: 500px;
+            background: yellow;
+            /* position: relative; */
+
+            display: flex;
+            /* justify-content: center; !horizontal madata yanawa*/
+            /* justify-content: start; !default value eka */
+            /* justify-content: end; */
+
+            /* align-items: center; !hverticaly madata yanawa */
+            /* align-items: start; !default value eka */
+            /* align-items: end; */
+
+            /* hari madata gena puluwan eassy way ekak */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        section>div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            /* position: absolute;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            left: 0;
+            margin: auto; */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+    </section>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flex layout(flex box layout)</title>
+    <style>
+        section{
+            background: yellow;
+            display: flex;
+            
+            /*flex-direction: column; !column,roe (default flex valuve eka ~ row)*/
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            /* justify-content: center; */
+
+            /* justify-content: end; !piliwele wenasak sida wenne na*/
+            /* flex-direction: row-reverse; !piliwela wenas wenawa*/
+
+            /* justify-content: space-between; !samana gaps create karanawa items athara */
+            /* justify-content: space-around;  */
+            justify-content: space-evenly;
+
+
+
+        }
+        section>div{
+            width: 50px;
+            height: 50px;
+            border: 2px solid blue;
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </section>
+</body>
+</html>

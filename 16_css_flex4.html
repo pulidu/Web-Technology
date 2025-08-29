@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex layout2</title>
+    <style>
+        section{
+            width: 500px;
+            height: 500px;
+            background: yellow;
+            /* position: relative; */
+
+            display: flex;
+            /* justify-content: center; !horizontal madata yanawa*/
+            /* justify-content: start; !default value eka */
+            /* justify-content: end; */
+
+            /* align-items: center; !hverticaly madata yanawa */
+            /* align-items: start; !default value eka */
+            /* align-items: end; */
+
+            /* hari madata gena puluwan eassy way ekak */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        section>div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            /* position: absolute;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            left: 0;
+            margin: auto; */
+
+            /*childta values add karanawa parenta values noda*/
+            align-self: center;
+            /* align-self: end; */
+            /* align-self: start; ! default value */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+    </section>
+</body>
+</html>
